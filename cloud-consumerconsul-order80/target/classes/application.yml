@@ -1,0 +1,22 @@
+### consul服务端口号
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-consumer-order
+###consul服务注册中心
+  cloud:
+    consul:
+      #host: localhost   #经过测试这个不加也可以，应该不加就是默认localhost,#consul服务器的主机地址
+      port: 8500
+      discovery:
+        #hostname: 127.0.0.1   #主机名称，不配置就显示你本第电脑的主机名，我这里是DESKTOP-44EPSQL
+        service-name: ${spring.application.name}  #指定服务的名称
+        #实例id，一个服务可以有多个实例
+        instance-id: "xxx"
+        #服务发现是否开启，默认为true
+        enabled: true
+        #服务注册是否开启，默认为true
+        register: true
+

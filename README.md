@@ -5,3 +5,4 @@
 ##eureka的自我保护机制只在cloud-eureka-server7001配置测试，结合cloud-provider-payment8001进行测试
 ##eureka的服务发现只在cloud-provider-payment8001进行测试，在controller里面编写方法测试，可以拿到eureka的所有服务和每个服务下的实例对象
 #zookeeper测试完成，下一步测试consul 2020.07.04
+#consul测试完成2020.07.04
